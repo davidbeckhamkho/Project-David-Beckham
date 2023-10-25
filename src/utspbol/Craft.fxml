@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utspbol.CraftController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="455.0" layoutY="14.0" text="CRAFT AN ITEM">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Line endX="1099.0" layoutY="60.0" strokeWidth="3.0" />
+      <Button fx:id="btnCraft" layoutX="509.0" layoutY="417.0" mnemonicParsing="false" onAction="#doCraftClick" text="CRAFT">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Label layoutX="14.0" layoutY="75.0" text="Select Items:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbvproc" layoutX="284.0" layoutY="115.0" prefHeight="270.0" prefWidth="259.0">
+         <columns>
+            <TableColumn fx:id="colidproc" prefWidth="41.0" text="ID" />
+            <TableColumn fx:id="colnameproc" prefWidth="153.0" text="Name" />
+            <TableColumn fx:id="colamountproc" prefWidth="64.0" text="Amount" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblstatus" contentDisplay="CENTER" layoutX="451.0" layoutY="471.0" prefHeight="26.0" prefWidth="198.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl1" layoutX="705.0" layoutY="417.0" />
+      <Label fx:id="lbl2" layoutX="705.0" layoutY="444.0" />
+      <Label fx:id="lbl3" layoutX="705.0" layoutY="470.0" />
+      <TableView fx:id="tbvitem" layoutX="14.0" layoutY="115.0" prefHeight="270.0" prefWidth="259.0">
+         <columns>
+            <TableColumn fx:id="coliditem" prefWidth="41.0" text="ID" />
+            <TableColumn fx:id="colnameitem" prefWidth="150.0" text="Name" />
+            <TableColumn fx:id="colamountitem" prefWidth="67.0" text="Amount" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tbvproc1" layoutX="558.0" layoutY="115.0" prefHeight="270.0" prefWidth="259.0">
+         <columns>
+            <TableColumn fx:id="colidproc1" prefWidth="41.0" text="ID" />
+            <TableColumn fx:id="colnameproc1" prefWidth="153.0" text="Name" />
+            <TableColumn fx:id="colamountproc1" prefWidth="64.0" text="Amount" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tbvproc2" layoutX="827.0" layoutY="115.0" prefHeight="270.0" prefWidth="259.0">
+         <columns>
+            <TableColumn fx:id="colidproc2" prefWidth="41.0" text="ID" />
+            <TableColumn fx:id="colnameproc2" prefWidth="153.0" text="Name" />
+            <TableColumn fx:id="colamountproc2" prefWidth="64.0" text="Amount" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblexpl" alignment="CENTER" layoutX="451.0" layoutY="504.0" prefHeight="21.0" prefWidth="198.0" textAlignment="CENTER" />
+      <Label layoutX="284.0" layoutY="75.0" text="Select Material 1:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="558.0" layoutY="75.0" text="Select Material 2:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="827.0" layoutY="75.0" text="Select Material 3:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="936.0" layoutY="17.0" mnemonicParsing="false" onAction="#backClick" text="Back to Inventory" />
+   </children>
+</AnchorPane>
